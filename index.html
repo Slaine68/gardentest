@@ -143,12 +143,14 @@
         var bodyheght=document.body.clientHeight;
         var nextsection,presection,nowsection;
         var picnum=4;
+        document.getElementsByClassName('now-section')[0].style.display="none";
         var dec=function()
         {
             picnum--;
             if(picnum==0)
             {
                 document.getElementById("loading").style.display="none";
+                document.getElementsByClassName('now-section')[0].style.display="block";
             }
         }
         var addlistener=function(obj){
