@@ -11,14 +11,17 @@
 
 <body id="body">
     <div id="radio" onclick="clickaudio()"><audio id="audio" loop src="img/back.mp3" autoplay preload="auto"></audio></div>
+    <section id="loading"><span style="animation:kakushire 3s linear 0s infinite alternate;
+    -webkit-animation:kakushire 3s linear 0s infinite alternate;
+    -moz-animation:kakushire 3s linear 0s infinite alternate;">loading...</span></section>
     <div id="arrow"><div id="right" class="arr"></div><div id="left" class="arr"></div></div>
-    <div style="display:none" id="after"></div><section class="main-section">
-        <img src="img/page1.1.png" class="img-full" style="margin:20% 0;animation:smalltobig 2s;"/>
-        <img src="img/page1.2.png" class="img-full" style="position: absolute;top:53%;opacity: 1;
+    <div style="display:none" id="after"></div><section class="main-section now-section">
+        <img src="img/page1.1.png" onload="dec()" class="img-full" style="margin:20% 0;animation:smalltobig 2s;"/>
+        <img src="img/page1.2.png"  onload="dec()" class="img-full" style="position: absolute;top:53%;opacity: 1;
              animation:kakushire2 4s;-webkit-animation:kakushire2 4s;-moz-animation:kakushire2 4s;"/>
-        <img src="img/page1.3.png" class="img-full" style="position: absolute;top:40%;
+        <img src="img/page1.3.png"  onload="dec()" class="img-full" style="position: absolute;top:40%;
              animation:kakushire 4s;-webkit-animation:kakushire 4s;-moz-animation:kakushire 4s;"/>
-        <img src="img/page1.4.png" class="img-full" style="position:absolute;top:59%;
+        <img src="img/page1.4.png" onload="dec()" class="img-full" style="position:absolute;top:59%;
             animation:kakushire 1s linear 0s infinite alternate;
             -webkit-animation:kakushire 1s linear 0s infinite alternate;
             -moz-animation:kakushire 1s linear 0s infinite alternate;">
@@ -89,7 +92,7 @@
                                                            animation:kakushire2 7s;z-index:10;-webkit-animation:kakushire2 7s;-moz-animation:kakushire2 7s;"/>
         <img src="img/page4.4.png" class="img-full" style="animation:kakushire 4s;-webkit-animation:kakushire 4s;-moz-animation:kakushire 4s;"/>
         </div>
-        </section><section class="main-section now-section">
+        </section><section class="main-section">
         <div style="position:absolute;bottom:55%;width:70%;vertical-align:top">
         <img src="img/page5.2.png" style="width:78%;
                                           animation:kakushire 3s ease 3.2s 1 both;
@@ -134,6 +137,15 @@
         var objs=document.getElementsByClassName('main-section');
         var bodyheght=document.body.clientHeight;
         var nextsection,presection,nowsection;
+        var picnum=4;
+        var dec=function()
+        {
+            picnum--;
+            if(picnum==0)
+            {
+                document.getElementById("loading").style.display="none";
+            }
+        }
         var addlistener=function(obj){
         obj.addEventListener('touchmove', function(event) {
                 var touch = event.targetTouches[0];
