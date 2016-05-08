@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>细支庄园</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="anime.css" type="text/css" />
+
+</head>
+
+<body id="body">
+    <div id="radio" onclick="clickaudio()"><audio id="audio" loop src="img/back.mp3" autoplay preload="auto"></audio></div>
+    <div id="arrow"><div id="right" class="arr"></div><div id="left" class="arr"></div></div>
+    <div style="display:none" id="after"></div><section class="main-section">
+        <img src="img/page1.1.png" class="img-full" style="margin:20% 0;animation:smalltobig 2s;"/>
+        <img src="img/page1.2.png" class="img-full" style="position: absolute;top:53%;opacity: 1;
+             animation:kakushire2 4s;-webkit-animation:kakushire2 4s;-moz-animation:kakushire2 4s;"/>
+        <img src="img/page1.3.png" class="img-full" style="position: absolute;top:40%;
+             animation:kakushire 4s;-webkit-animation:kakushire 4s;-moz-animation:kakushire 4s;"/>
+        <img src="img/page1.4.png" class="img-full" style="position:absolute;top:59%;
+            animation:kakushire 1s linear 0s infinite alternate;
+            -webkit-animation:kakushire 1s linear 0s infinite alternate;
+            -moz-animation:kakushire 1s linear 0s infinite alternate;">
+    </section><section class="main-section">
+        <div style="position:absolute;bottom:55%;left:30%;width:68%;vertical-align:top">
+        <img src="img/page2.1.png" style="width:30%;
+             animation:move 4s;-webkit-animation:move 4s;-moz-animation:move 4s;"/>
+        <img src="img/page2.2.png" style="width:60%;
+              animation:kakushire2 4s;-webkit-animation:kakushire2 4s;-moz-animation:kakushire2 4s;"/>
+        </div>
+        <div style="width:20%;position:absolute;top:45%;left:15%;">
+        <img src="img/page2.3.png" class="img-full" style="
+             animation:kakushire 1s linear 0s infinite alternate;
+             -webkit-animation:kakushire 1s linear 0s infinite alternate;
+             -moz-animation:kakushire 1s linear 0s infinite alternate;"/>
+        <img src="img/page2.4.png" class="img-full" style="position:absolute;top:0;">
+        </div>
+        <img src="img/page2.5.png" class="img-full" style="width:45%;position:relative;top:50%;
+                 animation:cloud 10s linear 0s 1 both;
+                 -webkit-animation:cloud 10s linear 0s 1 both;
+                 -moz-animation:cloud 10s linear 0s 1 both;"/>
+        <img src="img/page2.6.png" class="img-full" style="position:absolute;left:0px;bottom:0px;
+                                                           animation:kakushire  3s ease 0.3s 1 both;
+                                                           -webkit-animation:kakushire  3s ease 0.3s 1 both;
+                                                           -moz-animation:kakushire  3s ease 0.3s 1 both;"/>
+    </section><section class="main-section">
+        <div style="position:absolute;bottom:55%;vertical-align:top">
+        <img src="img/page3.4.png" style="width:55%;
+                                          animation:kakushire2 4s;-webkit-animation:kakushire2 4s;-moz-animation:kakushire2 4s;"/>
+        <img src="img/page3.3.png" style="width:43%;
+                                          animation:move 4s;-webkit-animation:move 4s;-moz-animation:move 4s;"/>
+        </div>
+        <img src="img/page3.6.png" class="img-full" style="width:100%;position:relative;top:50%;
+                                          animation:cloud2  10s linear 0s 1 both;
+                                                           -webkit-animation:cloud2  10s linear 0s 1 both;
+                                                           -moz-animation:cloud2  10s linear 0s 1 both;"/>
+        <img src="img/page3.7.png" class="img-full" style="width:100%;position:relative;top:50%;
+                                          animation:cloud2  10s linear 0s 1 both;
+                                                           -webkit-animation:cloud2  10s linear 0s 1 both;
+                                                           -moz-animation:cloud2  10s linear 0s 1 both;"/>
+        
+        <img src="img/page3.1.png" class="img-full" style="position:absolute;bottom:0;z-index:6;
+                                                           animation:kakushire 3s ease 4.2s 1 both;z-index:10;
+                                                           -webkit-animation:kakushire 3s ease 4.2s 1 both;z-index:10;
+                                                           -moz-animation:kakushire 3s ease 4.2s 1 both;z-index:10;"/>
+        <img src="img/page3.2.png" class="img-full" style="position:absolute;bottom:0;z-index:5;
+                                                           animation:kakushire 2.3s ease 2.1s 1 both;
+                                                           -webkit-animation:kakushire 2.3s ease 2.1s 1 both;
+                                                           -moz-animation:kakushire 2.3s ease 2.1s 1 both;"/>
+        <img src="img/page3.5.png" class="img-full" style="position:absolute;bottom:-10px;z-index:3;
+                                                           animation:kakushire  3s ease 0.3s 1 both;
+                                                        -webkit-animation:kakushire  3s ease 0.3s 1 both;
+                                                        -moz-animation:kakushire  3s ease 0.3s 1 both;"/>
+    </section><section class="main-section">
+    <div style="position:relative;bottom:-15%;vertical-align:top">
+        <img src="img/page4.2.png" style="width:55%;
+                                          animation:kakushire2 4s;-webkit-animation:kakushire2 4s;-moz-animation:kakushire2 4s;"/>
+        <img src="img/page4.1.png" style="width:43%;
+                                          animation:kakushire 3s ease 3.2s 1 both;
+                                          -webkit-animation:kakushire 3s ease 3.2s 1 both;
+                                          -moz-animation:kakushire 3s ease 3.2s 1 both;"/>
+        </div>
+        <img src="img/page4.3.png" class="img-full" style="width:100%;position:absolute;bottom:0;
+                                          animation:kakushire 4s;-webkit-animation:kakushire 4s;-moz-animation:kakushire 4s;"/>
+        <div style="position:absolute;bottom:-50px;
+                    animation:move 4s;z-index:10;-webkit-animation:move 4s;z-index:10;-moz-animation:move 4s;z-index:10;">
+        <img src="img/page4.5.png" class="img-full" style="position:absolute;top:0px;
+                                                           animation:kakushire2 7s;z-index:10;-webkit-animation:kakushire2 7s;-moz-animation:kakushire2 7s;"/>
+        <img src="img/page4.4.png" class="img-full" style="animation:kakushire 4s;-webkit-animation:kakushire 4s;-moz-animation:kakushire 4s;"/>
+        </div>
+        </section><section class="main-section now-section">
+        <div style="position:absolute;bottom:55%;width:70%;vertical-align:top">
+        <img src="img/page5.2.png" style="width:78%;
+                                          animation:kakushire 3s ease 3.2s 1 both;
+                                          -webkit-animation:kakushire 3s ease 3.2s 1 both;
+                                          -moz-animation:kakushire 3s ease 3.2s 1 both;"/>
+        <img src="img/page5.1.png" style="width:19%;
+                                          animation:move 4s ease 3.2s 1 both;
+                                          -webkit-animation:move 4s ease 3.2s 1 both;
+                                          -moz-animation:move 4s ease 3.2s 1 both;"/>
+        </div>
+        <img src="img/page5.5.png" class="img-full" style="width:38%;z-index:20;position:absolute;top:60%;left:60%;
+                                                            animation:move 3s ease 4.2s 1 both;
+                                                           -webkit-animation:move 3s ease 4.2s 1 both;
+                                                           -moz-animation:move 3s ease 4.2s 1 both;"/>
+        <div style="position:relative;top:60%;">
+        <img src="img/page5.3.png" class="img-full" style="position:absolute;top:0px;
+                                                           animation:kakushire2 7s;z-index:10;
+                                                           -webkit-animation:kakushire2 7s;z-index:10;
+                                                           -moz-animation:kakushire2 7s;z-index:10;"/>
+        <img src="img/page5.4.png" class="img-full" style="animation:kakushire 4s;-webkit-animation:kakushire 4s;-moz-animation:kakushire 4s;"/>
+        </div>
+    </section><section class="main-section">
+        <div style="margin-left:3%;margin-top:50%;padding:10px;">
+            <span style="display:inline-block;width:4%"></span>
+            <img src="img/page6.1.png" style="width:20%;animation:roll 3s ease 0.2s 1 both;-webkit-animation:roll 3s ease 0.2s 1 both;-moz-animation:roll 3s ease 0.2s 1 both;">
+            <img src="img/page6.2.png" style="width:20%;animation:roll 3s ease 1.2s 1 both;-webkit-animation:roll 3s ease 1.2s 1 both;-moz-animation:roll 3s ease 1.2s 1 both;">
+            <img src="img/page6.3.png" style="width:20%;animation:roll 3s ease 2.2s 1 both;-webkit-animation:roll 3s ease 2.2s 1 both;-moz-animation:roll 3s ease 2.2s 1 both;">
+            <img src="img/page6.4.png" style="width:20%;animation:roll 3s ease 3.2s 1 both;-webkit-animation:roll 3s ease 3.2s 1 both;-moz-animation:roll 3s ease 3.2s 1 both;">
+            
+            <img src="img/page6.5.png" style="width:25%;animation:kakushire 3s ease 1.2s 1 both;-webkit-animation:kakushire 3s ease 1.2s 1 both;-moz-animation:kakushire 3s ease 1.2s 1 both;">
+            <img src="img/page6.6.png" style="width:20%;animation:kakushire 3s ease 2.2s 1 both;-webkit-animation:kakushire 3s ease 2.2s 1 both;-moz-animation:kakushire 3s ease 2.2s 1 both;">
+            <img src="img/page6.7.png" style="width:20%;animation:kakushire 3s ease 3.2s 1 both;-webkit-animation:kakushire 3s ease 3.2s 1 both;-moz-animation:kakushire 3s ease 3.2s 1 both;">
+            <img src="img/page6.8.png" style="width:20%;animation:kakushire 3s ease 4.2s 1 both;-webkit-animation:kakushire 3s ease 4.2s 1 both;-moz-animation:kakushire 3s ease 4.2s 1 both;">
+        </div>
+        <img src="img/page6.9.png" style="width:100%;animation:kakushire 2s ease 5.2s 1 both;-webkit-animation:kakushire 2s ease 5.2s 1 both;-moz-animation:kakushire 2s ease 5.2s 1 both">
+        <img src="img/page6.10.png" style="width:100%;position:absolute;bottom:20px;animation:smalltobig 2s ease 6.2s 1 both;-webkit-animation:smalltobig 2s ease 6.2s 1 both;-moz-animation:smalltobig 2s ease 6.2s 1 both">
+    </section><span style="display:none" id="before"></span>
+
+    <script>
+        var startY,endY,sumY=0;
+        var downpx=0;
+        var objs=document.getElementsByClassName('main-section');
+        var bodyheght=document.body.clientHeight;
+        var nextsection,presection,nowsection;
+        var addlistener=function(obj){
+        obj.addEventListener('touchmove', function(event) {
+                var touch = event.targetTouches[0];
+                endY=touch.pageY;
+                sumY=endY-startY;
+                event.preventDefault();
+            if(sumY>0)
+            {
+                //往下
+                downpx=-(bodyheght-sumY);
+                presection.style.webkitTransform="translate(0px,"+downpx+"px)";
+                presection.style.transform="translate(0px,"+downpx+"px)";
+                presection.style.mozTransform="translate(0px,"+downpx+"px)";
+            }
+            else
+            {
+                //往上
+                downpx=bodyheght+sumY-10;
+                nextsection.style.webkitTransform="translate(0px,"+downpx+"px)";
+                nextsection.style.transform="translate(0px,"+downpx+"px)";
+                nextsection.style.mozTransform="translate(0px,"+downpx+"px)";
+            }
+         }, false);
+        obj.addEventListener('touchstart', function(event) {
+           event.preventDefault();
+            var touch = event.targetTouches[0];
+            startY=touch.pageY;
+            endY=touch.pageY;
+            nowsection=document.getElementsByClassName('now-section')[0];
+            presection=nowsection.previousSibling;
+            nextsection=nowsection.nextSibling;
+            if(presection.nodeName=="DIV")
+            {
+                presection=document.getElementById("before").previousSibling;
+            }
+            if(nextsection.nodeName=="SPAN")
+            {
+                nextsection=document.getElementById("after").nextSibling;
+            }
+            presection.style.display="block";
+            nextsection.style.display="block";
+            nextsection.style.webkitTransform="translate(0px,"+bodyheght+"px)";
+            nextsection.style.transform="translate(0px,"+bodyheght+"px)";
+            nextsection.style.mozTransform="translate(0px,"+bodyheght+"px)";
+            var tmp=-bodyheght;
+            presection.style.webkitTransform="translate(0px,"+tmp+"px)";
+            presection.style.transform="translate(0px,"+tmp+"px)";
+            presection.style.mozTransform="translate(0px,"+tmp+"px)";
+         }, false);
+        obj.addEventListener('touchend', function(event) {
+            //如果下拉10%
+            event.preventDefault();
+                 if(sumY>bodyheght*0.1)
+                 {
+                     //把上一个提上来，
+                     console.log(sumY+'up!');
+                     presection.style.transition="transform 0.5s linear";
+                     presection.style.webkitTransition="all 0.5s linear";
+                     presection.mozTransition="all 0.5s linear";
+                     presection.style.webkitTransform="translate(0px,0px)";
+                     presection.style.transform="translate(0px,0px)";
+                     presection.style.mozTransform="translate(0px,0px)";
+                     nextsection.style.display="none";
+                     setTimeout(function(){
+                         presection.style.transition="none";
+                         presection.style.webkitTransition="none";
+                         presection.mozTransition="none";
+                         nowsection.style.display="none";
+                         //上一个的class去掉
+                         nowsection.className="main-section";
+                        presection.className="main-section now-section";
+                     },500);
+                 }
+            //如果上拉10%
+                 else if(sumY<-bodyheght*0.1)
+                 {
+                     console.log(sumY+'down!');
+                     //把下一个提上来，
+                     nextsection.style.transition="transform 0.5s linear";
+                    nextsection.style.webkitTransition="all 0.5s linear";
+                    nextsection.mozTransition="all 0.5s linear";
+                     nextsection.style.webkitTransform="translate(0px,0px)";
+                     nextsection.style.transform="translate(0px,0px)";
+                     nextsection.style.mozTransform="translate(0px,0px)";
+                     presection.style.display="none";
+                     setTimeout(function(){
+                         //上一个的class去掉
+                         nowsection.className="main-section";
+                         nextsection.className="main-section now-section";
+                         nextsection.style.transition="none";
+                         nextsection.style.webkitTransition="none";
+                        nextsection.mozTransition="none";
+                         nowsection.style.display="none";},500);
+                 }
+                 else if(sumY>0)
+                 {
+                     
+                     console.log(sumY+'back!');
+                     var tmp=-bodyheght;
+                     presection.style.transition="transform 0.5s linear";
+                     presection.style.webkitTransition="all 0.5s linear";
+                     presection.mozTransition="all 0.5s linear";
+                    presection.style.webkitTransform="translate(0px,"+tmp+"px)";
+                     presection.style.transform="translate(0px,"+tmp+"px)";
+                     presection.style.mozTransform="translate(0px,"+tmp+"px)";
+                    setTimeout(function(){
+                        presection.style.transition="none";
+                         presection.style.webkitTransition="none";
+                         presection.mozTransition="none";
+                        presection.style.display="none";},500);
+                    nextsection.style.display="none";
+                 }
+                else
+                {
+                    console.log(sumY+'back!');
+                    nextsection.style.transition="transform 0.5s linear";
+                    nextsection.style.webkitTransition="all 0.5s linear";
+                    nextsection.mozTransition="all 0.5s linear";
+                    nextsection.style.webkitTransform="translate(0px,"+bodyheght+"px)";
+                    nextsection.style.transform="translate(0px,"+bodyheght+"px)";
+            nextsection.style.mozTransform="translate(0px,"+bodyheght+"px)";
+                    setTimeout(function(){
+                        nextsection.style.transition="none";
+                         nextsection.style.webkitTransition="none";
+                        nextsection.mozTransition="none";
+                        nextsection.style.display="none";},500);
+                    presection.style.display="none";
+                    
+                }
+            setTimeout(function(){
+                        nextsection.style.webkitTransform="translate(0px,0px)";
+                        nextsection.style.transform="translate(0px,0px)";
+                        nextsection.style.mozTransform="translate(0px,0px)";
+                        presection.style.webkitTransform="translate(0px,0px)";
+                        presection.style.transform="translate(0px,0px)";
+                        presection.style.mozTransform="translate(0px,0px)";
+                        nowsection.style.webkitTransform="translate(0px,0px)";
+                        nowsection.style.transform="translate(0px,0px)";
+                     nowsection.style.mozTransform="translate(0px,0px)";
+                     },500);
+            sumY=0;
+                 //obj.style.webkitTransform="translate(0px,0px)";
+             //rollflag=false;
+         }, false);
+        };
+        for(var i=0;i<objs.length;i++)
+        {
+            addlistener(objs[i]);
+        }
+        document.getElementById("audio").play();
+        var clickaudio=function()
+        {
+            var media=document.getElementById("audio");
+            var radio=document.getElementById("radio");
+            if(media.paused) {  
+                media.play();  
+                radio.className="running"
+            } else {  
+                media.pause();
+                radio.className="paused"
+            }  
+
+        }
+    </script>
+
+</body>
+
+</html>

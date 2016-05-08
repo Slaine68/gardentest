@@ -1,0 +1,308 @@
+html
+{
+    height: 100%;
+    overflow:hidden;
+}
+body
+{
+    height: 100%;
+    min-height: 100%;
+    font-weight: 300;
+    font-family: 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+    overflow:hidden;
+    background-color: #fffbe7;
+    margin: 0;
+}
+.main-section
+{
+    overflow:hidden;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background-image: url(img/bkg.png);
+}
+.running
+{
+    animation-play-state: running !important;
+    -webkit-animation-play-state: running !important;
+    -moz-animation-play-state: running !important;
+}
+.paused
+{
+    animation-play-state: paused !important;
+    -webkit-animation-play-state: paused !important;
+    -moz-animation-play-state: paused !important;
+}
+.now-section
+{
+    z-index: 1;
+    display: block;
+}
+.img-full
+{
+    width: 100%;
+}
+#radio
+{
+    background-image: url(img/normalmusic.svg);
+    background-repeat:no-repeat;
+    background-size:contain;
+    animation: roll2 1.2s linear infinite;
+    -webkit-animation: roll2 1.2s linear infinite;
+    -moz-animation: roll2 1.2s linear infinite;
+    z-index: 999;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+#arrow {
+   z-index: 999;
+    height: 14px;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    -webkit-animation: start 1.5s infinite ease-in-out;
+    -moz-animation: start 1.5s infinite ease-in-out;
+    animation: start 1.5s infinite ease-in-out;
+}
+
+#right {
+    transform: rotate(130deg);
+    -webkit-transform: rotate(130deg);
+    left: 1px;
+}
+
+#left {
+    left: 4.5px;
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+.arr {
+    background-color: #fff;
+    width: 14px;
+    height: 5px;
+    border-radius: 2px;
+    position: absolute;
+    box-shadow: 1px -1px 1px #646464;
+    top: 5px;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    z-index: 999;
+}
+
+    @keyframes kakushire
+    {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    }
+    @-webkit-keyframes kakushire
+    {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    }
+    @-moz-keyframes kakushire
+    {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    }
+    @-ms-keyframes kakushire
+    {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    }
+
+    @keyframes kakushire2
+    {
+    from {opacity: 0;}
+    30%{opacity: 0;}
+    to {opacity: 1;}
+    }
+    @-webkit-keyframes kakushire2
+    {
+    from {opacity: 0;}
+    30%{opacity: 0;}
+    to {opacity: 1;}
+    }
+    @-moz-keyframes kakushire2
+    {
+    from {opacity: 0;}
+    30%{opacity: 0;}
+    to {opacity: 1;}
+    }
+    @-ms-keyframes kakushire2
+    {
+    from {opacity: 0;}
+    30%{opacity: 0;}
+    to {opacity: 1;}
+    }
+
+    @keyframes smalltobig
+    {
+    from {transform: scale(0.3);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+    }
+    @-webkit-keyframes smalltobig
+    {
+    from {-webkit-transform: scale(0.3);opacity: 0;}
+    to {-webkit-transform: scale(1);opacity: 1;}
+    }
+    @-moz-keyframes smalltobig
+    {
+    from {-moz-transform: scale(0.3);opacity: 0;}
+    to {-moz-transform: scale(1);opacity: 1;}
+    }
+    @-ms-keyframes smalltobig
+    {
+    from {-ms-transform: scale(0.3);opacity: 0;}
+    to {-ms-transform: scale(1);opacity: 1;}
+    }
+
+    @keyframes cloud
+    {
+    from {transform: translate(0px,0px);opacity: 0;}
+    to {transform: translate(100%,0px);opacity: 1;}
+    }
+    @-webkit-keyframes cloud
+    {
+    from {-webkit-transform: translate(0px,0px);opacity: 0;}
+    to {-webkit-transform: translate(100%,0px);opacity: 1;}
+    }
+    @-moz-keyframes cloud
+    {
+    from {-moz-transform: translate(0px,0px);opacity: 0;}
+    to {-moz-transform: translate(100%,0px);opacity: 1;}
+    }
+
+    @keyframes cloud2
+    {
+    from {transform: translate(-50%,0px);opacity: 0;}
+    to {transform: translate(0px,0px);opacity: 1;}
+    }
+    @-webkit-keyframes cloud2
+    {
+    from {-webkit-transform: translate(-50%,0px);opacity: 0;}
+    to {-webkit-transform: translate(0px,0px);opacity: 1;}
+    }
+    @-moz-keyframes cloud2
+    {
+    from {-moz-transform: translate(-50%,0px);opacity: 0;}
+    to {-moz-transform: translate(0px,0px);opacity: 1;}
+    }
+    @-ms-keyframes cloud2
+    {
+    from {-ms-transform: translate(-50%,0px);opacity: 0;}
+    to {-ms-transform: translate(0px,0px);opacity: 1;}
+    }
+
+    @keyframes move
+    {
+    from {transform: translate(-50px,0px);opacity: 0;}
+    30%{transform: translate(-50px,0px);opacity: 0;}
+    to {transform: translate(0px,0px);opacity: 1;}
+    }
+    @-webkit-keyframes move
+    {
+    from {-webkit-transform: translate(-50px,0px);opacity: 0;}
+    30%{-webkit-transform: translate(-50px,0px);opacity: 0;}
+    to {-webkit-transform: translate(0px,0px);opacity: 1;}
+    }
+    @-moz-keyframes move
+    {
+    from {-moz-transform: translate(-50px,0px);opacity: 0;}
+    30%{-moz-transform: translate(-50px,0px);opacity: 0;}
+    to {-moz-transform: translate(0px,0px);opacity: 1;}
+    }
+    @keyframes start
+    {
+    0%, 30% {
+    opacity: 0;
+    transform: translate(0,10px);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0,-8px);
+    }
+    }
+    @-webkit-keyframes start
+    {
+    0%, 30% {
+    opacity: 0;
+    transform: translate(0,10px);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0,-8px);
+    }
+    }
+    @-moz-keyframes start
+    {
+    0%, 30% {
+    opacity: 0;
+    transform: translate(0,10px);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0,-8px);
+    }
+    }
+@keyframes roll
+{
+from {transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);opacity: 0;}
+to {transform: none;opacity: 1;}
+}
+@-webkit-keyframes roll
+{
+from {-webkit-transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);opacity: 0;}
+to {-webkit-transform: none;opacity: 1;}
+}
+@-moz-keyframes roll
+{
+from {-moz-transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);opacity: 0;}
+to {-moz-transform: none;opacity: 1;}
+}
+@-ms-keyframes roll
+{
+from {-ms-transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);opacity: 0;}
+to {-ms-transform: none;opacity: 1;}
+}
+
+    @keyframes roll2
+    {
+    from {transform:rotate3d(0,0,1,0deg);}
+    to {transform: rotate3d(0,0,1,360deg);}
+    }
+    @-webkit-keyframes roll2
+    {
+    from {-webkit-transform:rotate3d(0,0,1,0deg);}
+    to {-webkit-transform: rotate3d(0,0,1,360deg);}
+    }
+    @-moz-keyframes roll2
+    {
+    from {-moz-transform:rotate3d(0,0,1,0deg);}
+    to {-moz-transform: rotate3d(0,0,1,360deg);}
+    }
+    @-ms-keyframes roll2
+    {
+    from {-ms-transform:rotate3d(0,0,1,0deg);}
+    to {-ms-transform: rotate3d(0,0,1,360deg);}
+    }
+
+
