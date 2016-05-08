@@ -297,8 +297,8 @@ to {-ms-transform: none;opacity: 1;}
     }
     @-webkit-keyframes roll2
     {
-    from {-webkit-transform:rotate3d(0,0,1,0deg);}
-    to {-webkit-transform: rotate3d(0,0,1,360deg);}
+    from {-webkit-transform:rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
     }
     @-moz-keyframes roll2
     {
